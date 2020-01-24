@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.5//EN"
+	"http://struts.apache.org/dtds/struts-2.5.dtd">
+	<struts>  
+<package name="default" extends="struts-default">  
+<action name = "registration" class="com.lithan.vaibhav2.go.page">  
+<result name = "success">/HTML/Registration.jsp</result>
+<result name="error">/HTML/Registration.jsp</result>
+</action> 
+<action name="thank" class="com.lithan.controller.RegisterAction">  
+<result name="success">/HTML/thankyou.jsp</result>
+<result name="error">/HTML/error.jsp</result>
+</action>
+
+<action name="forgot" class="com.lithan.vaibhav2.go.page">  
+<result name="success">/HTML/forgot.jsp</result>
+<result name="error">/HTML/forgot.jsp</result>
+</action>
+
+<action name="login" class="com.lithan.vaibhav2.go.page">  
+<result name="success">/HTML/login.jsp</result>
+<result name="error">/HTML/login.jsp</result>
+</action>
+
+<action name="home" class="com.lithan.controller.LoginAction">  
+<result name="success">/HTML/admin.jsp</result>
+<result name="homie">/HTML/Home.jsp</result>
+<result name="error">/HTML/login.jsp</result>
+</action>
+
+<action name="homes" class="com.lithan.vaibhav2.go.page">  
+<result name="success">/HTML/Home.jsp</result>
+<result name="error">/HTML/error.jsp</result>
+</action>
+
+<action name="updateprofile" class="com.lithan.vaibhav2.go.page">  
+<result name="success">/HTML/Upadateprofile.jsp</result>
+<result name="error">/HTML/error.jsp</result>
+</action>
+
+<action name="update" class="com.lithan.controller.UpdateUser">  
+<result name="success">/HTML/Profile.jsp</result>
+<result name="error">/HTML/error.jsp</result>
+</action>
+
+<action name="search" class="com.lithan.vaibhav2.go.page">  
+<result name="success">/HTML/search.jsp</result>
+<result name="error">/HTML/error.jsp</result>
+</action>
+
+<action name="profile" class="com.lithan.vaibhav2.go.page">  
+<result name="success">/HTML/Profile.jsp</result>
+<result name="error">/HTML/error.jsp</result>
+</action>
+
+<action name="forgotch" class="com.lithan.vaibhav2.go.page">  
+<result name="success">/HTML/forgemail.jsp</result>
+<result name="error">/HTML/error.jsp</result>
+</action>
+
+<action name="passingemail" class="com.lithan.controller.CheckEmailAction">  
+<result name="success">/HTML/forgot.jsp</result>
+<result name="error">/HTML/login.jsp</result>
+</action>
+
+<action name="updatepass" class="com.lithan.controller.UpdatePassword">  
+<result name="success">/HTML/login.jsp</result>
+<result name="error">/HTML/forgemail.jsp</result>
+</action>
+
+<action name="viewrecord" class="com.lithan.controller.ProfilesAction">  
+<result name="success">/HTML/Publicprofile.jsp</result>
+<result name="error">/HTML/error.jsp</result>
+</action>
+
+<action name="fsearch" class="com.lithan.controller.SearchAction">  
+<result name="success">/HTML/Searchresult.jsp</result>
+<result name="error">/HTML/error.jsp</result>
+</action>
+
+<action name="adsearch" class="com.lithan.controller.AdminSearchAction">  
+<result name="success">/HTML/searchp.jsp</result>
+<result name="error">/HTML/error.jsp</result>
+</action>
+
+<action name="deleteuser" class="com.lithan.controller.DeleteAction">
+<result name="delete">/HTML/deleteuser.jsp</result>
+<result name="error">/HTML/error.jsp</result>
+</action>
+
+<action name="publicprofile" class="com.lithan.vaibhav2.go.page">  
+<result name="success">/HTML/Publicprofile.jsp</result>
+<result name="error">/HTML/error.jsp</result>
+</action>
+
+<action name="adminhome" class="com.lithan.vaibhav2.go.page">  
+<result name="success">/HTML/admin.jsp</result>
+<result name="error">/HTML/error.jsp</result>
+</action>
+
+</package>
+</struts>
